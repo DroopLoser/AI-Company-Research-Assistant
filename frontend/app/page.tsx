@@ -231,7 +231,7 @@ export default function Page() {
 
     {result.pdf && (
       <a
-        href={`http://127.0.0.1:8000/${result.pdf}`}
+        href={result.pdf}
         target="_blank"
         className="inline-block mt-6 rounded-lg bg-[#EAB54D] px-4 py-2 text-black font-semibold"
       >
