@@ -1,0 +1,39 @@
+from fastapi import FastAPI
+from api import research
+from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
+
+
+
+app = FastAPI(
+    title="AI Company Research Assistant API"
+)
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=[
+        "http://localhost:3000"
+    ],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+app.mount(
+    "/reports",
+    StaticFiles(directory="reports"),
+    name="reports"
+)
+
+app.include_router(
+    research.router,
+    prefix="/research"
+)
+
+
+@app.get("/")
+def home():
+
+    return {
+        "message": "AI Research Backend Running"
+    }
