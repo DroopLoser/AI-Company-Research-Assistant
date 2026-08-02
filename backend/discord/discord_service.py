@@ -3,7 +3,7 @@ import requests
 
 
 
-    message = {
+message = {
         "content": f"""
 New Company Research Completed
 
