@@ -15,7 +15,7 @@ app.add_middleware(
         "https://ai-company-research-assistant-bxbl.vercel.app",
         "https://ai-company-research-assistant-bxbl-f5s6e1xvs-atomforge.vercel.app",
     ],
-    allow_credentials=True,
+    allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
 )
