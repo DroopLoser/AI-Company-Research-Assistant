@@ -167,7 +167,14 @@ export default function Page() {
                 className="flex shrink-0 items-center gap-2 rounded-lg bg-[#EAB54D] px-4 py-2 font-mono text-[12px] font-semibold uppercase tracking-[0.06em] text-black shadow-[0_1px_0_0_rgba(255,255,255,0.25)_inset] transition-all hover:brightness-[1.08] active:brightness-95"
                 disabled={loading}
               >
-                {loading ? "Researching…" : "Research"}
+                {loading ? (
+                  <>
+                    <span className="h-3.5 w-3.5 animate-spin rounded-full border-2 border-black border-t-transparent"></span>
+                    Researching…
+                  </>
+                ) : (
+                  "Research"
+                 )}
               </button>
             </div>
             <p className="mt-3 flex items-center justify-center gap-1.5 font-mono text-[10.5px] text-white/35">
