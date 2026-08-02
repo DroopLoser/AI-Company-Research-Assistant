@@ -14,6 +14,8 @@ app.add_middleware(
     allow_origins=[
         "https://ai-company-research-assistant-bxbl.vercel.app",
         "https://ai-company-research-assistant-bxbl-f5s6e1xvs-atomforge.vercel.app",
+        "https://ai-company-research-assistant-bxbl-git-main-atomforge.vercel.app"
+        "https://ai-company-research-assistant-bxbl-dg7gum6sg-atomforge.vercel.app"
     ],
     allow_credentials=False,
     allow_methods=["*"],
