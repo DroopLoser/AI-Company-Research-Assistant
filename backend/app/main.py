@@ -19,6 +19,11 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+import os
+from fastapi.staticfiles import StaticFiles
+
+os.makedirs("reports", exist_ok=True)
+
 app.mount(
     "/reports",
     StaticFiles(directory="reports"),
