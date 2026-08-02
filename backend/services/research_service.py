@@ -51,10 +51,7 @@ def run_company_research(company_name):
     print("STEP 7: PDF generated")
     print(pdf_path)
 
-
-   
-
-   return {
-      "report": report,
-      "pdf": f"{BACKEND_URL}/{pdf_path}"
-   }
+    return {
+        "report": report,
+        "pdf": f"{BACKEND_URL}/{pdf_path}"
+    }
