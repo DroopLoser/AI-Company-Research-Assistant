@@ -33,7 +33,7 @@ export default function Page() {
 
 
       const response = await fetch(
-        "http://127.0.0.1:8000/research/research",
+        "https://ai-company-research-assistant-qrhh.onrender.com/research/research",
         {
           method: "POST",
 
