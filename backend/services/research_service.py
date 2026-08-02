@@ -52,7 +52,9 @@ def run_company_research(company_name):
     print(pdf_path)
 
 
-    return {
-        "report": report,
-        "pdf": pdf_path
-    }
+   BACKEND_URL = "https://ai-company-research-assistant-qrhh.onrender.com"
+
+   return {
+    "report": report,
+    "pdf": f"{BACKEND_URL}/{pdf_path}"
+  }
