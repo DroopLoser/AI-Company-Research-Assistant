@@ -13,7 +13,7 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "https://ai-company-research-assistant-bxbl.vercel.app"
-        "ai-company-research-assistant-bxbl-63bx96h95-atomforge.vercel.app"
+        "https://ai-company-research-assistant-bxbl-f5s6e1xvs-atomforge.vercel.app"
     ],
     allow_credentials=True,
     allow_methods=["*"],
