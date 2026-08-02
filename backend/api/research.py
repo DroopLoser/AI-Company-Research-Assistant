@@ -63,14 +63,3 @@ def research_company(data: dict):
 
     return result
 
-from discord.settings import discord_settings
-
-
-@router.post("/discord-settings")
-def save_discord_settings(data: dict):
-
-    discord_settings["webhook_url"] = data.get("webhook_url")
-
-    return {
-        "message": "Discord settings saved"
-    }
