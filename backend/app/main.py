@@ -12,9 +12,10 @@ app = FastAPI(
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "https://ai-company-research-assistant-bxbl.vercel.app/"
+        "https://ai-company-research-assistant-bxbl.vercel.app"
+        "ai-company-research-assistant-bxbl-63bx96h95-atomforge.vercel.app"
     ],
-    allow_credentials=False,
+    allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
