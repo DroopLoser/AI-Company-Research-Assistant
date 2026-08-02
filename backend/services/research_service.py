@@ -2,7 +2,6 @@ from search.serper import search_company
 from crawler.crawler import crawl_website
 from ai.analyzer import analyze_company
 from pdf.generator import generate_pdf
-from discord.discord_service import send_discord_report
 
 def run_company_research(company_name):
 
