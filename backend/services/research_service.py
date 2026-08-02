@@ -2,9 +2,9 @@ from search.serper import search_company
 from crawler.crawler import crawl_website
 from ai.analyzer import analyze_company
 from pdf.generator import generate_pdf
-BACKEND_URL = "https://ai-company-research-assistant-qrhh.onrender.com"
-def run_company_research(company_name):
 
+def run_company_research(company_name):
+    BACKEND_URL = "https://ai-company-research-assistant-qrhh.onrender.com"
     print("STEP 1: Starting research")
 
     search_result = search_company(company_name)
@@ -57,4 +57,4 @@ def run_company_research(company_name):
    return {
       "report": report,
       "pdf": f"{BACKEND_URL}/{pdf_path}"
-}
+   }
