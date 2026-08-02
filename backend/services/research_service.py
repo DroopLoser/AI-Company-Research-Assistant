@@ -55,6 +55,6 @@ def run_company_research(company_name):
    BACKEND_URL = "https://ai-company-research-assistant-qrhh.onrender.com"
 
    return {
-    "report": report,
-    "pdf": f"{BACKEND_URL}/{pdf_path}"
-  }
+      "report": report,
+      "pdf": f"{BACKEND_URL}/{pdf_path}"
+}
